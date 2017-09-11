@@ -4,7 +4,11 @@ import styled from 'styled-components'
 
 
 export default () => (
-  <Link href='/'>
-    <img style={{padding: "50px"}} width="15%"src='/static/V2_beta.png' />
-  </Link>
+  <div className="logo-container">
+    <center>
+      <Link href='/'>
+        <img style={{padding: "50px"}} src='/static/V2_beta.png' />
+      </Link>
+    </center>
+  </div>
 )
