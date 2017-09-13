@@ -1,9 +1,22 @@
 import Logo from '../components/Logo.js'
 import Link from 'next/link'
 
+
+const servicesOverview = {
+  textAlign: "center",
+  marginBottom: "30px",
+  fontSize: "1.1em"
+}
+
+
 export default () => (
   <div>
     <Logo />
+    <div className="services-overview">
+      <p style={servicesOverview}>We break our services down into two main categories.
+        Either we're building you something special, or we're helping the world realize that you have
+      something special.</p>
+    </div>
     <center>
       <div className="container">
     	  <Link prefetch href="/product_design">
@@ -36,6 +49,12 @@ export default () => (
         padding: 20px;
         margin: 20px;
       }
+
+      .services-overview {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
     `}</style>
 	</div>
 )
