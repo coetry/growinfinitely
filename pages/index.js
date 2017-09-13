@@ -1,11 +1,24 @@
-import Link from 'next/prefetch'
+import Link from 'next/link'
 import styled from 'styled-components'
 import Logo from '../components/Logo.js'
 
 
+const frontMission = {
+  textAlign: "center",
+  marginBottom: "30px",
+  fontSize: "1.1em"
+}
+
+const Underline = styled.span`
+  text-decoration: underline wavy black;
+`
+
 const Home = () => (
   <div>
-    <Logo /><br /><br /><br /><br />
+    <Logo /><br />
+      <div class="front-mission">
+        <p style={frontMission}>We leverage the power of <Underline>technology</Underline> and <Underline>design</Underline> to grow individuals, businesses, and communities.</p>
+      </div><br/><br/><br/><br/>
     <div className="home">
       <div className="main">
         <Link prefetch href="/values">
@@ -33,7 +46,8 @@ const Home = () => (
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: -1;
+        z-index: 0;
+        padding-top: 30px;
       }
 
       .main {
@@ -41,20 +55,8 @@ const Home = () => (
        text-align: center;
      }
 
-     a {
-       display: inline-block;
-       margin: 0 15px;
-       text-decoration: none;
-       text-transform: uppercase;
-       font-size: 2em;
-     }
-     a:visited {
-       color: gray;
-       text-transform: uppercase;
-       text-decoration: none;
-     }
-     a:hover {
-       color: black;
+     .front-mission {
+       padding: 30px;
      }
 
     `}</style>

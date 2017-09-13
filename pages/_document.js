@@ -20,7 +20,38 @@ export default class MyDocument extends Document {
           <style jsx global>{`
              body {
               font-family: Avenir;
-             }        
+             }
+
+             a {
+               display: inline-block;
+               margin: 0 15px;
+               text-decoration: none;
+               text-transform: uppercase;
+               font-size: 1em;
+               color: gray;
+             }
+             a:visited {
+               color: gray;
+               text-transform: uppercase;
+               text-decoration: none;
+             }
+             a:hover {
+               color: black;
+             }
+
+             h1 {
+               text-transform: uppercase;
+               font-weight: 100;
+               color: gray;
+               font-size: 1.5em;
+             }
+
+             h2 {
+               text-transform: uppercase;
+               font-weight: 100;
+               color: gray;
+               font-size: 1.0em;
+             }
           `}</style>
         </body>
       </html>

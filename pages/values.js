@@ -3,12 +3,10 @@ import styled from 'styled-components'
 import Logo from '../components/Logo.js'
 
 const Value = styled.h1`
-  font-family: 'Avenir';
-  font-size: 1.2em;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  font-weight: 400;
+  font-size: 1.1em;
 `
 
 const BlackHighlight = styled.span`
@@ -48,7 +46,6 @@ export default () => (
     <Value>
       We are StraightUp <BlackHighlight>Growth</BlackHighlight>
     </Value>
-
 
   </div>
 )

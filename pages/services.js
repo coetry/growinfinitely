@@ -1,23 +1,25 @@
 import Logo from '../components/Logo.js'
-import Link from 'next/prefetch'
+import Link from 'next/link'
 
 export default () => (
   <div>
     <Logo />
-    <div className="container">
-  	  <Link prefetch href="/product_design">
-        <h1 className="service product-design">Product Design</h1>
-  	  </Link>
-      <Link prefetch href="/growth">
-        <h1 className="service growth">Growth</h1>
-  	  </Link>
-    </div>
-
+    <center>
+      <div className="container">
+    	  <Link prefetch href="/product_design">
+          <a className="service product-design">Product Design</a>
+    	  </Link>
+        <Link prefetch href="/growth">
+          <a className="service growth">Growth</a>
+    	  </Link>
+      </div>
+    </center>
     <style jsx>{`
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
+        width: 50%;
       }
 
       .product-design {
@@ -29,7 +31,7 @@ export default () => (
       }
 
       .service {
-        border: 2px solid black;
+        border: 1px solid black;
         border-radius: 3px;
         padding: 20px;
         margin: 20px;
