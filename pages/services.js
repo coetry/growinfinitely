@@ -22,6 +22,9 @@ export default () => (
     	  <Link prefetch href="/product_design">
           <a className="service product-design">Product Design</a>
     	  </Link>
+
+        {/* Growth: It's tech, data, and design driven marketing. */}
+
         <Link prefetch href="/growth">
           <a className="service growth">Growth</a>
     	  </Link>

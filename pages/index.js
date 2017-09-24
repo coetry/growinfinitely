@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Logo from '../components/Logo.js'
 
 
+
 const frontMission = {
   textAlign: "center",
   marginBottom: "30px",
@@ -14,6 +15,7 @@ const Underline = styled.span`
 `
 
 const Home = () => (
+
   <div>
     <Logo /><br />
       <div class="front-mission">
@@ -62,6 +64,7 @@ const Home = () => (
     `}</style>
 
   </div>
+
 )
 
 
