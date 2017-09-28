@@ -5,11 +5,12 @@ export default () => (
   <div>
     <Logo />
     <div className="product-design-body">
-      <h1>Product Design</h1>
 
-      <p className="blurb">We build digital services and products for <strong>Web </strong>
-      and <strong>Native</strong> platforms that your end-users will <strong>love</strong>.</p>
-
+      <div className="product-design-header">
+        <h1>Product Design</h1>
+        <p className="blurb">We build digital services and products for <strong>Web </strong>
+        and <strong>Native</strong> platforms that your end-users will <strong>love</strong>.</p>
+      </div>
       <div className="platforms">
         <h2>Web</h2>
         <p>
@@ -47,10 +48,16 @@ export default () => (
     </div>
 
     <style jsx>{`
+
       .product-design-body {
         margin-left: 100px;
         margin-right: 100px;
 
+      }
+
+      .product-design-header {
+        padding: 20px;
+        margin: 20px;
       }
 
       .blurb {
@@ -59,10 +66,20 @@ export default () => (
       }
 
       .platforms {
-        border: 1px solid gray;
-        border-radius: 3px;
         padding: 20px;
         margin: 20px;
+      }
+
+      p {
+        line-height: 2em;
+      }
+
+      h1 {
+        color: black;
+      }
+
+      h2 {
+        color: black;
       }
 
     `}</style>

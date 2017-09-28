@@ -4,14 +4,12 @@ export default () => (
   <div>
     <Logo />
     <div className="growth-body">
-      <h1>Growth</h1>
-
-
-      {/* Growth: It's tech, data, and design driven marketing. */}
-
-      <p className="blurb">We've developed an integrated system of identity building and communications
+      <div className="growth-header">
+        <h1>Growth</h1>
+        {/* Growth: It's tech, data, and design driven marketing. */}
+        <p className="blurb">We've developed an integrated system of identity building and communications
       strategies to push your project towards infinite growth. </p>
-
+      </div>
       <div className="growth-services">
         <h2>Brand Identity</h2>
         <p>
@@ -40,7 +38,7 @@ We produce digital content whether that's through photography, videography or vi
       <div className="growth-services">
         <h2>Social</h2>
         <p>
-We help you communicate your brand identity with your audience. 
+We help you communicate your brand identity with your audience.
         </p>
       </div>
 
@@ -57,15 +55,18 @@ We help you communicate your brand identity with your audience.
 
       }
 
+      .growth-header {
+        padding: 20px;
+        margin: 20px;
+      }
+
       .blurb {
         font-style: italic;
         text-align: center;
       }
 
       .growth-services {
-        border: 1px solid gray;
-        border-radius: 3px;
-        padding: 20px;
+        padding: 20px
         margin: 20px;
       }
 

@@ -2,63 +2,72 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import Logo from '../components/Logo.js'
 
-
-
-const frontMission = {
-  textAlign: "center",
-  marginBottom: "30px",
-  fontSize: "1.1em"
-}
-
 const Underline = styled.span`
   text-decoration: underline wavy black;
 `
 
 const Home = () => (
-
-  <div>
-    <Logo /><br />
-      <div class="front-mission">
-        <p style={frontMission}>We leverage the power of <Underline>technology</Underline> and <Underline>design</Underline> to grow individuals, businesses, and communities.</p>
-      </div><br/><br/><br/><br/>
-    <div className="home">
-      <div className="main">
-        <Link prefetch href="/values">
-          <a>values</a>
-        </Link>
-        <Link prefetch href="/services">
-          <a>services</a>
-        </Link>
-        <Link prefetch href="/work-with-us">
-          <a>work</a>
-        </Link>
-        <Link prefetch href="/hire">
-          <a>hire</a>
-        </Link>
-      </div>
+  <div className="home">
+    <Logo />
+    <div class="mission">
+      <p>We leverage the power of <Underline>technology</Underline> and <Underline>design</Underline> to grow individuals, businesses, and communities.</p>
     </div>
+    <div className="links">
+      <Link prefetch href="/values">
+        <a>values</a>
+      </Link>
+      <Link prefetch href="/services">
+        <a>services</a>
+      </Link>
+      <Link prefetch href="/work-with-us">
+        <a>work</a>
+      </Link>
+      <Link prefetch href="/hire">
+        <a>hire</a>
+      </Link>
+    </div> {/* .links */}
 
-    <style jsx>{`
+
+  <style jsx>{`
       .home {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 0;
+        display: grid;
+        grid-template-columns: 1fr;
         padding-top: 30px;
       }
 
-      .main {
-       flex: none;
-       text-align: center;
-     }
+      .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
 
-     .front-mission {
-       padding: 30px;
+
+       a {
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: 1.2em;
+       }
+       a:visited {
+         color: black;
+       }
+       a:hover {
+         color: black;
+         font-family: 'Fira Mono'
+       }
+
+     p {
+       text-align: left;
+       font-size: 1.7em;
+       margin-left: 25%;
+       margin-right: 25%;
      }
 
     `}</style>

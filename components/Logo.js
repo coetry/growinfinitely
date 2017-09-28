@@ -1,14 +1,7 @@
-import Link from 'next/prefetch'
-import styled from 'styled-components'
-
-
+import Link from 'next/link'
 
 export default () => (
-  <div className="logo-container">
-    <center>
-      <Link href='/'>
-        <img style={{padding: "50px"}} src='/static/rocket_ship.svg' />
-      </Link>
-    </center>
-  </div>
+  <Link href="/">
+    <img style={{marginLeft: "25%", marginRight:"25%", width: "300px"}} src='/static/logo_az_9_27_17.svg' />
+  </Link>
 )

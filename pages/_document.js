@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
         <Head>
           <title>StraightUp Growth</title>
           {styleTags}
+
         </Head>
         <body>
           <div className='root'>
@@ -18,9 +19,14 @@ export default class MyDocument extends Document {
           </div>
           <NextScript />
           <style jsx global>{`
+
+            @import url('https://fonts.googleapis.com/css?family=Fira+Mono:700|Fira+Sans:100');
+
+
              body {
-              font-family: Avenir;
+              font-family: 'Fira Sans', Avenir, sans-serif;
              }
+
 
              a {
                display: inline-block;
@@ -37,16 +43,20 @@ export default class MyDocument extends Document {
              }
              a:hover {
                color: black;
+               text-decoration: underline;
              }
 
              h1 {
+               font-family: 'Fira Mono';
                text-transform: uppercase;
                font-weight: 100;
                color: gray;
                font-size: 1.5em;
+               font-family: 'Fira Mono'
              }
 
              h2 {
+               font-family: 'Fira Mono';
                text-transform: uppercase;
                font-weight: 100;
                color: gray;
