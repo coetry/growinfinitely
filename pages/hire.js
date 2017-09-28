@@ -1,8 +1,7 @@
-import Logo from '../components/Logo.js'
+import Layout from '../components/Layout'
 
 export default () => (
-  <div>
-    <Logo />
+  <Layout>
     <h1>Hire Us</h1>
 
     <style jsx>{`
@@ -10,5 +9,5 @@ export default () => (
         text-align:center;
       }
     `}</style>
-	</div>
+	</Layout>
 )

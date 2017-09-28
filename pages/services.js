@@ -1,6 +1,7 @@
-import Logo from '../components/Logo.js'
 import Link from 'next/link'
+import Layout from '../components/Layout'
 
+{/* Growth: It's tech, data, and design driven marketing. */}
 
 const servicesOverview = {
   textAlign: "center",
@@ -10,32 +11,33 @@ const servicesOverview = {
 
 
 export default () => (
-  <div>
-    <Logo />
-    <div className="services-overview">
-      <p style={servicesOverview}>We break our services down into two main categories.
-        Either we're building you something special, or we're helping the world realize that you have
-      something special.</p>
-    </div>
-    <center>
+  <Layout>
+
       <div className="container">
-    	  <Link prefetch href="/product_design">
-          <a className="service product-design">Product Design</a>
-    	  </Link>
+        <div>
+      	  <Link prefetch href="/product_design">
+            <a className="service product-design">Product Design</a>
+      	  </Link>
+          <p>
+            Let us build you something special.
+          </p>
+        </div>
 
-        {/* Growth: It's tech, data, and design driven marketing. */}
-
-        <Link prefetch href="/growth">
-          <a className="service growth">Growth</a>
-    	  </Link>
+        <div>
+          <Link prefetch href="/growth">
+            <a className="service growth">Growth</a>
+      	  </Link>
+          <p>
+            Let us help the world realize that you have something special.
+          </p>
+        </div>
       </div>
-    </center>
+
     <style jsx>{`
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        width: 50%;
       }
 
       .product-design {
@@ -53,11 +55,8 @@ export default () => (
         margin: 20px;
       }
 
-      .services-overview {
-        margin-left: 20%;
-        margin-right: 20%;
-      }
+
 
     `}</style>
-	</div>
+</Layout>
 )

@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import Logo from '../components/Logo.js'
+import Layout from '../components/Layout'
 
 export default () => (
-  <div>
-    <Logo />
+  <Layout>
     <div className="product-design-body">
 
       <div className="product-design-header">
@@ -50,14 +49,12 @@ export default () => (
     <style jsx>{`
 
       .product-design-body {
-        margin-left: 100px;
-        margin-right: 100px;
+
 
       }
 
       .product-design-header {
-        padding: 20px;
-        margin: 20px;
+
       }
 
       .blurb {
@@ -66,8 +63,7 @@ export default () => (
       }
 
       .platforms {
-        padding: 20px;
-        margin: 20px;
+    
       }
 
       p {
@@ -83,5 +79,5 @@ export default () => (
       }
 
     `}</style>
-  </div>
+  </Layout>
 )

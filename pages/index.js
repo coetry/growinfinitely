@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import Logo from '../components/Logo.js'
+import Layout from '../components/Layout'
+import Lead from '../components/Lead'
 
-const Underline = styled.span`
-  text-decoration: underline wavy black;
+const Emphasize = styled.span`
+  text-decoration: underline wavy #333;
 `
-
 const Home = () => (
-  <div className="home">
-    <Logo />
+  <Layout title="Home | StraightUp Growth">
     <div class="mission">
-      <p>We leverage the power of <Underline>technology</Underline> and <Underline>design</Underline> to grow individuals, businesses, and communities.</p>
+      <Lead>
+        We leverage the power of <Emphasize>technology</Emphasize> and <Emphasize>design</Emphasize> to grow individuals, businesses, and communities.
+      </Lead>
     </div>
     <div className="links">
       <Link prefetch href="/values">
@@ -29,24 +30,13 @@ const Home = () => (
 
 
   <style jsx>{`
-      .home {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 30px;
-      }
+
 
       .links {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
-        margin-top: 20px;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-top: 100px;
       }
 
 
@@ -63,16 +53,13 @@ const Home = () => (
          font-family: 'Fira Mono'
        }
 
-     p {
-       text-align: left;
-       font-size: 1.7em;
-       margin-left: 25%;
-       margin-right: 25%;
-     }
+       .mission {
+         margin-top: 100px;
+       }
 
     `}</style>
 
-  </div>
+  </Layout>
 
 )
 

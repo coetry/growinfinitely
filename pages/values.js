@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import Logo from '../components/Logo.js'
+import Layout from '../components/Layout'
 
-const Value = styled.h1`
-  text-align: center;
+const Value = styled.p`
+  text-align: left;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 1.1em;
@@ -18,8 +18,7 @@ const BlackHighlight = styled.span`
 
 
 export default () => (
-  <div>
-    <Logo />
+  <Layout>
     <Value>
       We are problem solvers who are
       obsessed with growth.
@@ -47,5 +46,5 @@ export default () => (
       We are StraightUp <BlackHighlight>Growth</BlackHighlight>
     </Value>
 
-  </div>
+  </Layout>
 )

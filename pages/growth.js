@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Logo from '../components/Logo.js'
+import Layout from '../components/Layout'
+
 export default () => (
-  <div>
-    <Logo />
+  <Layout>
     <div className="growth-body">
       <div className="growth-header">
         <h1>Growth</h1>
@@ -50,14 +50,11 @@ We help you communicate your brand identity with your audience.
 
     <style jsx>{`
       .growth-body {
-        margin-left: 100px;
-        margin-right: 100px;
 
       }
 
       .growth-header {
-        padding: 20px;
-        margin: 20px;
+
       }
 
       .blurb {
@@ -66,10 +63,14 @@ We help you communicate your brand identity with your audience.
       }
 
       .growth-services {
-        padding: 20px
-        margin: 20px;
+
       }
 
+      h1, h2 {
+        color: black;
+      }
+
+
     `}</style>
-  </div>
+  </Layout>
 )
