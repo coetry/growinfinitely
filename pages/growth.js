@@ -63,7 +63,8 @@ We help you communicate your brand identity with your audience.
       }
 
       .growth-services {
-
+        margin-top: 50px;
+        line-height: 2em;
       }
 
       h1, h2 {

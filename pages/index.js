@@ -6,12 +6,22 @@ import Lead from '../components/Lead'
 const Emphasize = styled.span`
   text-decoration: underline wavy #333;
 `
+const ProtoLead = styled(Lead)`
+  > p {
+    font-size: 1em;
+    color: indianred;
+  }
+`
+
 const Home = () => (
   <Layout title="Home | StraightUp Growth">
     <div class="mission">
       <Lead>
         We leverage the power of <Emphasize>technology</Emphasize> and <Emphasize>design</Emphasize> to grow individuals, businesses, and communities.
       </Lead>
+      <ProtoLead>
+        We want to work with forward thinking people that aren't afraid to take risks or <Emphasize>step</Emphasize> (it's not enough to simply think) outside of the box.
+      </ProtoLead>
     </div>
     <div className="links">
       <Link prefetch href="/values">
@@ -53,9 +63,7 @@ const Home = () => (
          font-family: 'Fira Mono'
        }
 
-       .mission {
-         margin-top: 100px;
-       }
+
 
     `}</style>
 

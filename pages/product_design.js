@@ -63,7 +63,7 @@ export default () => (
       }
 
       .platforms {
-    
+        margin-top: 20px;
       }
 
       p {
