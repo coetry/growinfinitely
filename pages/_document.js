@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
           <NextScript />
           <style jsx global>{`
 
-            @import url('https://fonts.googleapis.com/css?family=Fira+Mono:700|Fira+Sans:100');
+            @import url('https://fonts.googleapis.com/css?family=Fira+Mono:700|Fira+Sans:300');
 
 
              body {

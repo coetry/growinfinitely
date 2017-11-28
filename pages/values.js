@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 
 const Value = styled.p`
   text-align: left;
-  padding-top: 50px;
   padding-bottom: 50px;
   font-size: 1.1em;
 `
@@ -24,27 +23,24 @@ export default () => (
       obsessed with growth.
     </Value>
     <Value>
-      We believe that most things
-      are possible.
+      We start with the why.
+    </Value>
+    <Value>
+      We deploy first-principles thinking.
     </Value>
     <Value>
       We are builders, makers, and creatives
       assembled for a purpose.
     </Value>
     <Value>
-      We challenge the norm and aren't
-      afraid to go against conventional wisdom.
+      We test everything and let the data tell us
+      stories.
     </Value>
     <Value>
-      We break the rules to learn something new
-    </Value>
-    <Value>
-      We abhor stagnancies and complacencies
-      because they are the antitheses of growth
+      We believe that everyday is a new day and a chance to grow.
     </Value>
     <Value>
       We are StraightUp <BlackHighlight>Growth</BlackHighlight>
     </Value>
-
   </Layout>
 )

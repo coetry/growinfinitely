@@ -5,9 +5,10 @@ export default ({children}) => (
       {children}
     </p>
     <style jsx>{`
-      p {
-        font-size: 1.7em;
+      @media (max-width: 600px) {
+        font-size: 0.5em;
       }
+
     `}</style>
   </div>
 )

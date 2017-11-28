@@ -1,28 +1,25 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Lead from '../components/Lead'
+import MediaQuery from 'react-responsive'
 
 const Emphasize = styled.span`
   text-decoration: underline wavy #333;
 `
-const ProtoLead = styled(Lead)`
-  > p {
-    font-size: 1em;
-    color: indianred;
-  }
-`
 
 const Home = () => (
   <Layout title="Home | StraightUp Growth">
-    <div class="mission">
-      <Lead>
+
+
+    <div class="mobile-mission">
+      <p>
         We leverage the power of <Emphasize>technology</Emphasize> and <Emphasize>design</Emphasize> to grow individuals, businesses, and communities.
-      </Lead>
-      <ProtoLead>
-        We want to work with forward thinking people that aren't afraid to take risks or <Emphasize>step</Emphasize> (it's not enough to simply think) outside of the box.
-      </ProtoLead>
+      </p>
     </div>
+
+
     <div className="links">
       <Link prefetch href="/values">
         <a>values</a>
@@ -63,6 +60,13 @@ const Home = () => (
          font-family: 'Fira Mono'
        }
 
+       @media (max-width: 550px) {
+         a {
+           color: red;
+         }
+       }
+
+       .
 
 
     `}</style>

@@ -6,7 +6,7 @@ export default ({children, title="StraightUp Growth"}) => (
   <div>
     <Head>
       <title>{title}</title>
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <meta name='viewport' content='initial-scale=1.0, width=device-width, user-scalable=no' />
     </Head>
 
     <div className="grid">
@@ -41,7 +41,9 @@ export default ({children, title="StraightUp Growth"}) => (
         row-column-gap: 30px;
       }
 
-
+      @media (max-width: 600px) {
+        width: 80%;
+      }
 
     `}</style>
   </div>
