@@ -44,7 +44,8 @@ export default () => (
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        text-align: center;
+        text-align: left;
+        grid-gap:1px;
       }
 
       .product-design {
@@ -56,10 +57,8 @@ export default () => (
       }
 
       .service {
-        border: 1px solid black;
-        border-radius: 3px;
-        padding: 20px;
-        margin: 20px;
+        background-color: black;
+        color: white;
       }
 
 

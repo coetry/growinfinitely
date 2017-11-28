@@ -42,7 +42,7 @@ const Home = () => (
 
       .mission{
 
-         font-size: 2rem;
+         font-size: 1.5rem;
 
 
 
@@ -54,7 +54,7 @@ const Home = () => (
          animation: hue 4s ease infinite;
          color: #f35626;
          background-image: linear-gradient(92deg, #f35626, #feab3a);
-         
+
 
        }
 
