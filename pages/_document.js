@@ -20,11 +20,11 @@ export default class MyDocument extends Document {
           <NextScript />
           <style jsx global>{`
 
-            @import url('https://fonts.googleapis.com/css?family=Fira+Mono:700|Fira+Sans:300');
+            @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300');
 
 
              body {
-              font-family: 'Fira Sans', Avenir, sans-serif;
+              font-family: 'Fira Mono', Avenir, sans-serif;
              }
 
 
@@ -32,9 +32,9 @@ export default class MyDocument extends Document {
                display: inline-block;
                margin: 0 15px;
                text-decoration: none;
-               text-transform: uppercase;
                font-size: 1em;
                color: gray;
+               font-family:'Fira Mono', monospace;
              }
              a:visited {
                color: gray;
