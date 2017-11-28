@@ -14,24 +14,31 @@ export default () => (
   <Layout>
 
       <div className="container">
-        <div>
-      	  <Link prefetch href="/product_design">
-            <a className="service product-design">Product Design</a>
-      	  </Link>
-          <p>
-            Let us build you something special.
-          </p>
-        </div>
 
-        <div>
-          <Link prefetch href="/growth">
-            <a className="service growth">Growth</a>
-      	  </Link>
-          <p>
-            Let us help the world realize that you have something special.
-          </p>
+        <section>
+
+        </section>
+
+        <section>
+          <div>
+        	  <Link prefetch href="/product_design">
+              <a className="service product-design">Product Design</a>
+        	  </Link>
+            <p>
+              Let us build you something special.
+            </p>
+          </div>
+
+          <div>
+            <Link prefetch href="/growth">
+              <a className="service growth">Growth</a>
+        	  </Link>
+            <p>
+              Let us help the world realize that you have something special.
+            </p>
+          </div>
         </div>
-      </div>
+       <section>
 
     <style jsx>{`
       .container {
