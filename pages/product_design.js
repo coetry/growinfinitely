@@ -11,10 +11,9 @@ export default () => (
         and <strong>Native</strong> platforms that your end-users will <strong>love</strong>.</p>
       </div>
       <div className="platforms">
-        <h2>Web</h2>
+        <h2><strong>Web</strong></h2>
         <p>
-          We interact with the web on
-          a daily and it sure isn't the
+          The web isn't the
           same platform that it was 10 years ago
           or even just a few years back. As browsers
           evolve, client side experiences are becoming
@@ -23,13 +22,13 @@ export default () => (
           expect faster response times and careful design
           to trust that you care about them. We're always
           in the lab staying on top of the latest trends and
-          technologies so we can always deliver a world class
+          technologies so we can deliver a world class
           user experience.
         </p>
       </div>
 
       <div className="platforms">
-        <h2>Native</h2>
+        <h2 className><strong>Native</strong></h2>
         <p>
           Android, iOS, and Desktop are called native because
           they are the host platforms that guest applications
@@ -48,13 +47,16 @@ export default () => (
 
     <style jsx>{`
 
+
+
+
       .product-design-body {
 
 
       }
 
       .product-design-header {
-
+        padding-bottom:25px;
       }
 
       .blurb {
@@ -64,8 +66,15 @@ export default () => (
 
       .platforms {
         margin-top: 20px;
-      }
+        padding-right:20%;
+        padding-left:20%;
 
+      }
+      .platforms h2{
+        background-color:black;
+        color:white;
+        padding:5px;
+      }
       p {
         line-height: 2em;
       }

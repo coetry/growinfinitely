@@ -6,7 +6,7 @@ const Value = styled.p`
   padding-bottom: 50px;
   font-size: 1.1em;
   display:flex;
-  justify-content:center;
+  margin-bottom:
 `
 
 const BlackHighlight = styled.span`
