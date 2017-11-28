@@ -16,7 +16,8 @@ export default () => (
       <div className="container">
 
         <section>
-
+          Industries have been disrupting at a rapid pace due to the advances in technology
+          and communications.
         </section>
 
         <section>
@@ -37,8 +38,8 @@ export default () => (
               Let us help the world realize that you have something special.
             </p>
           </div>
-       <section>
-
+       </section>
+     </div>
     <style jsx>{`
       .container {
         display: grid;
