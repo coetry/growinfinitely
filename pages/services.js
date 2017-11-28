@@ -37,7 +37,6 @@ export default () => (
               Let us help the world realize that you have something special.
             </p>
           </div>
-        </div>
        <section>
 
     <style jsx>{`
