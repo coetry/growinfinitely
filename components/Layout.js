@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Logo from '../components/Logo'
-
+import Navigation from '../components/Navigation'
+import NewsLetter from '../components/NewsLetter'
 export default ({children, title="StraightUp Growth"}) => (
   <div>
     <Head>
@@ -12,13 +13,18 @@ export default ({children, title="StraightUp Growth"}) => (
     <div className="grid">
 
       <div className="logo-container">
+      <NewsLetter />
         <Logo />
+
       </div>
+
+
 
       <div className="body-container">
         {children}
       </div>
 
+      <Navigation />
     </div>
 
     <style jsx>{`
@@ -30,15 +36,19 @@ export default ({children, title="StraightUp Growth"}) => (
 
 
       .logo-container {
-        margin: auto;
-        padding-bottom: 100px;
+
+        display:flex;
+        justify-content:flex-end;
+        margin-right:1em;
+        margin-top:0;
+        align-items:center;
+
       }
 
       .body-container {
-        margin-left: 20%;
-        margin-right: 20%;
         display: grid;
         row-column-gap: 30px;
+        min-height: calc(100vh - 300px);
       }
 
       @media (max-width: 600px) {

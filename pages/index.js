@@ -12,61 +12,62 @@ const Emphasize = styled.span`
 const Home = () => (
   <Layout title="Home | StraightUp Growth">
 
-
-    <div class="mobile-mission">
-      <p>
-        We leverage the power of <Emphasize>technology</Emphasize> and <Emphasize>design</Emphasize> to grow individuals, businesses, and communities.
-      </p>
+    <div className="container">
+      <div className="mission">
+        <p>
+        we leverage the power of technology and design to grow <span className="gradient">individuals, businesses, </span>and <span className="gradient">communities</span>.
+        </p>
+        </div>
     </div>
-
-
-    <div className="links">
-      <Link prefetch href="/values">
-        <a>values</a>
-      </Link>
-      <Link prefetch href="/services">
-        <a>services</a>
-      </Link>
-      <Link prefetch href="/work-with-us">
-        <a>work</a>
-      </Link>
-      <Link prefetch href="/hire">
-        <a>hire</a>
-      </Link>
-    </div> {/* .links */}
-
 
   <style jsx>{`
 
 
       .links {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 20px;
-        margin-top: 100px;
+        grid-template-columns: 1fr;
+        justify-items: center;
       }
 
+      .links ul li {
+        list-style:none;
+        display: inline;
+      }
 
-       a {
-         text-decoration: none;
-         text-transform: uppercase;
-         font-size: 1.2em;
-       }
-       a:visited {
-         color: black;
-       }
-       a:hover {
-         color: black;
-         font-family: 'Fira Mono'
+      .container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
        }
 
-       @media (max-width: 550px) {
-         a {
-           color: red;
-         }
+      .mission{
+
+         font-size: 2rem;
+
+
+
        }
 
-       .
+       .gradient{
+        -webkit-background-clip: text;
+         text-fill-color: transparent;
+         animation: hue 4s ease infinite;
+         color: #f35626;
+         background-image: linear-gradient(92deg, #f35626, #feab3a);
+         
+
+       }
+
+        @keyframes hue {
+          from {
+            filter: hue-rotate(0deg);
+          }
+
+          to {
+            filter: hue-rotate(-360deg);
+          }
+        }
+
 
 
     `}</style>
