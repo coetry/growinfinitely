@@ -2,46 +2,52 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 
-const Value = styled.p`
+const Value = styled.div`
   padding-bottom: 50px;
   font-size: 1.1em;
-  display:flex;
-  margin-bottom:
+  width: 40%;
 `
 
 const BlackHighlight = styled.span`
   background-color: black;
   color: white;
-  padding: 10px;
 `
 
 
 
 export default () => (
   <Layout>
-    <Value>
-      We are problem solvers who are
-      obsessed with growth.
-    </Value>
-    <Value>
-      We start with the why.
-    </Value>
-    <Value>
-      We deploy first-principles thinking.
-    </Value>
-    <Value>
-      We are builders, makers, and creatives
-      assembled for a purpose.
-    </Value>
-    <Value>
-      We test everything and let the data tell us
-      stories.
-    </Value>
-    <Value>
-      We believe that everyday is a new day and a chance to grow.
-    </Value>
-    <Value>
-      We are StraightUp <BlackHighlight>Growth</BlackHighlight>
-    </Value>
+    <div className="container">
+      <Value>
+        We are problem solvers who are
+        obsessed with growth.
+      </Value>
+      <Value>
+        We start with the why.
+      </Value>
+      <Value>
+        We deploy first-principles thinking.
+      </Value>
+      <Value>
+        We are builders, makers, and creatives
+        assembled for a purpose.
+      </Value>
+      <Value>
+        We test everything and let the data tell us
+        stories.
+      </Value>
+      <Value>
+        We believe that everyday is a new day and a chance to grow.
+      </Value>
+      <Value>
+        We are StraightUp <BlackHighlight>Growth</BlackHighlight>
+      </Value>
+    </div>
+    <style jsx>{`
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    `}</style>
   </Layout>
 )

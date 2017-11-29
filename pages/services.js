@@ -15,15 +15,17 @@ export default () => (
 
       <div className="container">
 
-        <section>
+        <section className="services-blurb">
           Industries have been disrupting at a rapid pace due to the advances in technology
-          and communications.
+          and communications. Businesses and Brands can no longer survive without omnipresence.
+          We deive deep below the surface to explore what that truly means right now and how
+          we can keep pushing the boundaries.
         </section>
 
         <section>
           <div>
         	  <Link prefetch href="/product_design">
-              <a className="service product-design">Product Design</a>
+              <a className="service product-design">PRODUCT DESIGN</a>
         	  </Link>
             <p>
               Let us build you something special.
@@ -32,7 +34,7 @@ export default () => (
 
           <div>
             <Link prefetch href="/growth">
-              <a className="service growth">Growth</a>
+              <a className="service growth">GROWTH</a>
         	  </Link>
             <p>
               Let us help the world realize that you have something special.
@@ -54,6 +56,10 @@ export default () => (
 
       .growth {
         grid-column: 2 / 3;
+      }
+
+      .services-blurb {
+        width: 90%;
       }
 
       .service {

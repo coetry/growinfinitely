@@ -8,7 +8,7 @@ export default () => (
       <div className="product-design-header">
         <h1>Product Design</h1>
         <p className="blurb">We build digital services and products for <strong>Web </strong>
-        and <strong>Native</strong> platforms that your end-users will <strong>love</strong>.</p>
+        and <strong>Native</strong> platforms.</p>
       </div>
       <div className="platforms">
         <h2><strong>Web</strong></h2>
@@ -35,8 +35,28 @@ export default () => (
           (like a web browser) are installed and ran on. Although
           web browsers are reaching near native performance, nothing
           beats a fully native application in speed and overall user experience.
-          StraightUp Growth has the expertise to build you a well designed native
-          application that works seamlessly accross mobile and desktop operating systems.
+        </p>
+      </div>
+
+      <div className="platforms">
+        <h2 className><strong>VR/AR</strong></h2>
+        <p>
+          Android, iOS, and Desktop are called native because
+          they are the host platforms that guest applications
+          (like a web browser) are installed and ran on. Although
+          web browsers are reaching near native performance, nothing
+          beats a fully native application in speed and overall user experience.
+        </p>
+      </div>
+
+      <div className="platforms">
+        <h2 className><strong>Blockchain</strong></h2>
+        <p>
+          Android, iOS, and Desktop are called native because
+          they are the host platforms that guest applications
+          (like a web browser) are installed and ran on. Although
+          web browsers are reaching near native performance, nothing
+          beats a fully native application in speed and overall user experience.
         </p>
       </div>
 

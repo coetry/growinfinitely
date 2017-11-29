@@ -10,7 +10,7 @@ export default ({children, title="StraightUp Growth"}) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width, user-scalable=no' />
     </Head>
 
-    <div className="grid">
+    <div className="top-level-container">
 
       <div className="logo-container">
       <NewsLetter />
@@ -29,14 +29,12 @@ export default ({children, title="StraightUp Growth"}) => (
 
     <style jsx>{`
 
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr;
+      .top-level-container {
+
       }
 
 
       .logo-container {
-
         display:flex;
         justify-content:flex-end;
         margin-right:1em;
@@ -46,9 +44,8 @@ export default ({children, title="StraightUp Growth"}) => (
       }
 
       .body-container {
-        display: grid;
-        row-column-gap: 30px;
-        min-height: calc(100vh - 300px);
+        margin: 0 3em 0 3em;
+        min-height: calc(100vh - 400px);
       }
 
       @media (max-width: 600px) {
