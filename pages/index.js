@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Lead from '../components/Lead'
-import MediaQuery from 'react-responsive'
+import {Keyframes, Frame} from 'react-keyframes'
 
 const Emphasize = styled.span`
   text-decoration: underline wavy #333;
@@ -15,13 +15,15 @@ const Home = () => (
     <div className="container">
       <div className="mission">
         <p>
-        we leverage the power of technology and design to grow <span className="gradient">individuals, businesses, </span>and <span className="gradient">communities</span>.
+        we leverage the power of technology and design to grow
+          <span className="gradient"> individuals,</span>
+          <span className="gradient"> businesses, </span>
+          <span className="gradient">and communities.</span>
         </p>
-        </div>
+      </div>
     </div>
 
   <style jsx>{`
-
 
       .links {
         display: grid;

@@ -13,8 +13,8 @@ export default ({children, title="StraightUp Growth"}) => (
     <div className="top-level-container">
 
       <div className="logo-container">
-      <NewsLetter />
-        <Logo />
+        {/* <NewsLetter />
+        <Logo /> */}
 
       </div>
 

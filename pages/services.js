@@ -15,17 +15,33 @@ export default () => (
 
       <div className="container">
 
+      { /*
         <section className="services-blurb">
-          Industries have been disrupting at a rapid pace due to the advances in technology
+          <span className="no">1</span>
+          `Industries have been disrupting at a rapid pace due to the advances in technology
           and communications. Businesses and Brands can no longer survive without omnipresence.
-          We deive deep below the surface to explore what that truly means right now and how
-          we can keep pushing the boundaries.
+          We dive deep below the surface to explore what that truly means right now and how
+          we can keep pushing the boundaries.`
+        </section> */}
+
+      {/*  <section className="services-blurb">
+          <span className="no">2</span>
+         `It's hard to ignore the drastic impact technology has had on our lives.
+         I'm sure you've also observed the drastic impact that design has had on our lives.
+         We leverage design thinking to solve difficult problems through technology and design.
+         We also know how to bring your project in front of the world. We can help you grow.`
+        </section> */}
+
+        <section className="services-blurb">
+        {`It all starts with a product built around human centered design; an invisible experience
+          that doesn't require people to think too hard. Then through a system of identity building
+          and messaging, we push your product into hearts and minds and keep it moving forward.`}
         </section>
 
-        <section>
+        <section className="services">
           <div>
         	  <Link prefetch href="/product_design">
-              <a className="service product-design">PRODUCT DESIGN</a>
+              <a className="service-category product-design">PRODUCT DESIGN</a>
         	  </Link>
             <p>
               Let us build you something special.
@@ -34,7 +50,7 @@ export default () => (
 
           <div>
             <Link prefetch href="/growth">
-              <a className="service growth">GROWTH</a>
+              <a className="service-category growth">GROWTH</a>
         	  </Link>
             <p>
               Let us help the world realize that you have something special.
@@ -60,11 +76,23 @@ export default () => (
 
       .services-blurb {
         width: 90%;
+        border: 1px solid black;
       }
 
-      .service {
+      .services {
+        border: 1px solid black;
+      }
+
+      .service-category {
         background-color: black;
         color: white;
+      }
+
+      .no {
+        color: white;
+        background-color: black;
+        padding: 3px;
+        width: 5px;
       }
 
 

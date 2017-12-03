@@ -25,8 +25,8 @@ export default class MyDocument extends Document {
 
              body {
               font-family: 'Fira Mono', Avenir, sans-serif;
+              line-height: 1.6em;
              }
-
 
              a {
                display: inline-block;
