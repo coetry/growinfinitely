@@ -13,6 +13,10 @@ const Home = () => (
   <Layout title="Home | StraightUp Growth">
 
     <div className="container">
+
+    <p>Nearly every industry has been disrupted
+    by technology and design thinking.</p>
+
       <div className="mission">
         <p>
         we leverage the power of technology and design to grow

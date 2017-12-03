@@ -13,46 +13,36 @@ export default () => (
       <div className="platforms">
         <h2><strong>Web</strong></h2>
         <p>
-          {`The web isn't the
-          same platform that it was 10 years ago
-          or even just a few years back. As browsers
-          evolve, client side experiences are becoming
-          richer, deeper, and more interactive. People
-          expect faster response times and careful design
-          to trust that you care about them.`}
+          {` There's been a revolution in the web. Client side experiences are becoming
+          richer, deeper, and more interactive. Firefox came back, JavaScript (EcmaScript)
+            isn't just a little scripting language anymore, HTTP/2 is officially here, Web Assembly and WebVR
+            are also ready for production.`}
         </p>
       </div>
 
       <div className="platforms">
         <h2 className><strong>Native</strong></h2>
         <p>
-          {`iOS, Android and Desktop are called native because
-          they are the host platforms that guest applications
-          (like a web browser) are installed and ran on. Although
-          web browsers are reaching near native performance, nothing
-          beats a fully native application in speed and overall user experience.`}
+          {`It's a mobile only world. The desktop has become replaced by tablets for most consumers, unless your profession requires it.
+            Phones your gateway to the "Internet Of Things". Talk to us about building your next iOS or Android app.
+            `}
         </p>
       </div>
 
       <div className="platforms">
         <h2 className><strong>VR/AR</strong></h2>
         <p>
-          Android, iOS, and Desktop are called native because
-          they are the host platforms that guest applications
-          (like a web browser) are installed and ran on. Although
-          web browsers are reaching near native performance, nothing
-          beats a fully native application in speed and overall user experience.
+          Virtual Reality is here and it changes everything. It enables immersive and compelling experiences for a new era of computing and brand interactions.
+          Augmented Reality allows you to merge the physical and digital worlds.
         </p>
       </div>
 
       <div className="platforms">
         <h2 className><strong>Blockchain</strong></h2>
         <p>
-          Android, iOS, and Desktop are called native because
-          they are the host platforms that guest applications
-          (like a web browser) are installed and ran on. Although
-          web browsers are reaching near native performance, nothing
-          beats a fully native application in speed and overall user experience.
+          {`What's powerful enough to rebuild an entire country? Blockchains. Built upon math and a decentralized democracy,
+          Blockchains enable a newer level of integrity, security, and insurance. This has been made possible through the recent
+          advances in distributed computing and processing power. Let's talk about building a DAPP (Decentralized Application).`}
         </p>
       </div>
 

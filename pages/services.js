@@ -33,10 +33,20 @@ export default () => (
         </section> */}
 
         <section className="services-blurb">
-        {`It all starts with a product built around human centered design; an invisible experience
+        {`It all starts with a product built around human centered design; a frictionless experience
           that doesn't require people to think too hard. Then through a system of identity building
-          and messaging, we push your product into hearts and minds and keep it moving forward.`}
+          and messaging, we push your product into hearts and minds and keep it moving forward.
+        `}
         </section>
+
+        {/*
+        <section className="services-blurb">
+          `We'll help you generate leads
+          and develop relationships with your customers. Nearly every industry has been disrupted
+          by technology and design thinking. `
+        </section>*/}
+
+        
 
         <section className="services">
           <div>
