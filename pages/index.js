@@ -14,8 +14,10 @@ const Home = () => (
 
     <div className="container">
 
-    <p>Nearly every industry has been disrupted
-    by technology and design thinking.</p>
+    <div className="disrupted">
+      <p>Nearly every industry has been disrupted
+      by technology and design thinking.</p>
+    </div>
 
       <div className="mission">
         <p>
@@ -41,17 +43,20 @@ const Home = () => (
       }
 
       .container{
-        display:flex;
+        display:grid;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
        }
 
       .mission{
+         font-size: 1rem;
+         text-align: center;
+       }
 
-         font-size: 1.5rem;
-
-
-
+       .disrupted {
+         font-family: "Fira Sans";
+         font-size: 2rem;
        }
 
        .gradient{

@@ -16,7 +16,8 @@ export default () => (
           {` There's been a revolution in the web. Client side experiences are becoming
           richer, deeper, and more interactive. Firefox came back, JavaScript (EcmaScript)
             isn't just a little scripting language anymore, HTTP/2 is officially here, Web Assembly and WebVR
-            are also ready for production.`}
+            are also ready for production. So much more is possible today that wasn't before. Your
+            product deserves the latest development and design trends.`}
         </p>
       </div>
 
@@ -24,7 +25,7 @@ export default () => (
         <h2 className><strong>Native</strong></h2>
         <p>
           {`It's a mobile only world. The desktop has become replaced by tablets for most consumers, unless your profession requires it.
-            Phones your gateway to the "Internet Of Things". Talk to us about building your next iOS or Android app.
+            Phones your gateway to the "Internet Of Things". Do you want your product or brand plugged into the network?
             `}
         </p>
       </div>
@@ -32,8 +33,8 @@ export default () => (
       <div className="platforms">
         <h2 className><strong>VR/AR</strong></h2>
         <p>
-          Virtual Reality is here and it changes everything. It enables immersive and compelling experiences for a new era of computing and brand interactions.
-          Augmented Reality allows you to merge the physical and digital worlds.
+          {`Virtual Reality is here and it changes everything. It enables immersive and compelling experiences for a new era of computing and brand interactions.
+          Augmented Reality allows you to merge the physical and digital worlds. How will you tell a story about your brand in such a world?`}
         </p>
       </div>
 
@@ -42,7 +43,7 @@ export default () => (
         <p>
           {`What's powerful enough to rebuild an entire country? Blockchains. Built upon math and a decentralized democracy,
           Blockchains enable a newer level of integrity, security, and insurance. This has been made possible through the recent
-          advances in distributed computing and processing power. Let's talk about building a DAPP (Decentralized Application).`}
+          advances in distributed computing and processing power. Talk to us if you're interested in exploring this.`}
         </p>
       </div>
 

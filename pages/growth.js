@@ -22,23 +22,19 @@ export default () => (
 
       <div className="growth-services">
         <h2>Discoverability</h2>
-        <p>
-       We help you get found. We put your brand in the right places, so your people can discover and start a relationship with you.
+        <p>Standing out in a noisy world isn't the easiest thing to do. We help you get found. We put your brand in the right places using a variety of organic and paid strategies, so your people can discover and start a relationship with you.
         </p>
       </div>
 
       <div className="growth-services">
         <h2>Storytelling</h2>
-        <p>
-          Compelling visual and auditorial pieces serve as a way to illustrate the essence of your brand. We create these illustrations with the mindset of producing a reaction within your audience. This requires us to think rationally and creativly to design a story using conventional rehtoric.
-        </p>
-        <p> Uniting an idea with an emotion is a powerful way to produce a reaction from your audience. Compelling visual and auditorial pieces serve as a way to illustrate the essence of your brand. We enjoy sitting down and thinking creativly to design a story using unconventional rehtoric.</p>
+        <p> Uniting an idea with an emotion is a powerful way to produce a reaction from your audience. Compelling visual and auditorial pieces serve as a way to illustrate the essence of your brand. We enjoy sitting down and thinking creativly to tell stories using unconventional rhetoric.</p>
       </div>
       <div className="growth-services">
         <h2>Social</h2>
         <p>
         We use your brand’s voice to communicate with people. We believe in being apart of your follower's life by enriching their experience throughout different social channels. It not about selling your service or product, But instead effectively selling your existence and vision.
-        <p> social media has no secret, you just have to treat your followers as humans. </p>
+        social media has no secret, you just have to treat your followers as humans. 
 
         </p>
       </div>
